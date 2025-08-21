@@ -21,16 +21,16 @@ function validateCard() {
   let result = document.getElementById("result");
 
   if (cardNumber === "" || !/^\d+$/.test(cardNumber)) {
-    result.innerHTML = "⚠️ Please enter a valid numeric card number!";
+    result.innerHTML = "Please enter a valid numeric card number!";
     result.style.color = "orange";
     return;
   }
 
   if (luhnAlgorithm(cardNumber)) {
-    result.innerHTML = "✅ Valid Credit Card Number";
-    result.style.color = "green";
+    result.innerHTML = "Valid Credit Card Number";
+    result.style.color = "khaki";
   } else {
-    result.innerHTML = "❌ Invalid Credit Card Number";
-    result.style.color = "red";
+    result.innerHTML = "Invalid Credit Card Number";
+    result.style.color = "mistyrose";
   }
 }
