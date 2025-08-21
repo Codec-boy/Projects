@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Validator</title>
-    <link rel="stylesheet" href="/Projects/CreditCardValidator/Creditcard.css">
+    <link rel="stylesheet" href="Creditcard.css">
 </head>
 <body>
+    <div id="heading">
+         <h1><span>Credit Card</span> Validator</h1>
+    </div>
     <div class="container">
-        <h1><b>Credit Card Validator</b></h1>
-        <input type="text" id="cardNumber" placeholder="Enter Card Number">
-        <button onclick="validateCard()">check</button>
+        <h3>Enter your credit card number</h3>
+        <div class ="card">
+        <input type="password" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="22">
+        <button onclick="validateCard()"><b>Examine</b></button>
         <p id="result"></p>
     </div>
-    <script src="/Projects/CreditCardValidator/script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html> 
